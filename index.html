@@ -90,5 +90,19 @@
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script>
     let tg = window.Telegram.WebApp;
-    let buy = getElementById('buy') </script>
+    const button = document.querySelector('button');
+    const bt = document.querySelector('.bte');
+    const main = document.querySelector('.day');
+    const fon = document.querySelector('.fon');
+
+    function hideMain() {
+        main.style.display = 'none';
+        bt.style.display = 'none';
+        fon.style.display = 'block';
+    }
+
+    button.addEventListener('click', hideMain);
+
+    
+    </script>
 </html>
